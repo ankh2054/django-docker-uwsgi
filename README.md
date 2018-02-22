@@ -32,6 +32,9 @@ To run it:
     $ docker run  --name docker.django -p 8000:8000 \
 	 -d -e 'VIRTUAL_HOST=www.test.co.uk' \
    	 -e 'VIRTUAL_PROTO=uwsgi' \
+	 -e "VIRTUAL_HOST=test.co.uk,www.test.co.uk" \
+   	 -e "LETSENCRYPT_HOST=test.co.uk,www.test.co.uk" \
+   	 -e "LETSENCRYPT_EMAIL=test@test.co.uk" \
 	 -e 'DJANGO_APP_NAME=test' \
 	 -e 'PIP_PACKAGES=django==1.11 gunicorn dj-static django-anymail mysqlclient'
 	 -e 'DB_NAME=django'
