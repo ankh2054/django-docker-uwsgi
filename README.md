@@ -25,7 +25,7 @@ To buld the docker modx image:
 
 Download and extract files to modx/ directory. 
 
-		$ docker build https://github.com/ankh2054/docker-ghost.git -t docker-django-uwsgi 
+		$ docker build https://github.com/ankh2054/django-docker-uwsgi.git -t django-uwsgi 
 
 To run it:
 
